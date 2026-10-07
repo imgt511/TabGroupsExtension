@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Groups Quick Access",
+  "version": "1.0",
+  "description": "Quick access to tab groups from any webpage via right-click menu",
+  "permissions": [
+    "contextMenus",
+    "tabGroups",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab Groups Manager"
+  }
+}
